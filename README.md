@@ -71,6 +71,7 @@ https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?nod
 * [React.js](https://reactjs.org/)
 * [Sass](https://sass-lang.com/)
 * [Cypress](https://www.cypress.io/)
+* [Typescript](https://www.typescriptlang.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -127,8 +128,8 @@ To get a local copy up and running follow these simple example steps.
 
 ## Roadmap
 
-- [ ] Create React with Typescript and SASS Project
-- [ ] Add reset, images, fonts, icons in projet
+- [x] Create React with Typescript and SASS Project
+- [x] Add reset, images, fonts, icons in projet
 - [ ] Finished Desktop
   - [ ]  Add HTML semantic 
   - [ ]  Use images, fonts and icons
@@ -172,7 +173,7 @@ Use this space to list resources you find helpful and would like to give credit 
 
 * [Designer Iuricode](https://www.linkedin.com/in/iuricode/)
 * [Img Shields](https://shields.io)
-* [Font Awesome Icons](https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react)
+* [React Icons](https://react-icons.github.io/react-icons)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
