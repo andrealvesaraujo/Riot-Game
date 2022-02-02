@@ -1,29 +1,48 @@
 import React from 'react';
+
 import './App.scss';
+import "./fonts/Druk Wide Bold.ttf";
+import "./fonts/OpenSans-Bold.ttf";
+import "./fonts/OpenSans-Regular.ttf";
+
+import background from './img/background.png'
+import logo from './img/Logo.svg'
+import omen from './img/Omen.svg'
+import sage from './img/Sage.svg'
+import sova from './img/Sova.svg'
+import mainCharacter from './img/main-character.png'
+
+
 import {FiShare2, FiTwitter, FiFacebook, FiInstagram} from "react-icons/fi"
          
+
 function App() {
   return (
     <main>
       <header>
         <div>
-          {/* Logo */}
+          <a href="https://playvalorant.com/pt-br/" target="_blank" rel="noreferrer">
+            <img src={logo} alt="Valorant Logo"/>
+          </a>
         </div>
-        <div>Riot Games</div>
-        <div><FiShare2/></div>
+        <h3>Riot Games</h3>
+        <div><FiShare2 className='share'/></div>
       </header>
       <section>
         <div>
           <h1>Valorant</h1>
           <div>
             <div>
-              {/* Omem */}
+              <img src={omen} alt="Valorant Character - Omen"/>
+              <span>Omen</span>
             </div>
             <div>
-              {/* Sage */}
+              <img src={sage} alt="Valorant Character - Sage"/>
+              <span>Sage</span>
             </div>
             <div>
-              {/* Sova */}
+              <img src={sova} alt="Valorant Character - Sova"/>
+              <span>Sova</span>
             </div>
           </div>
           <footer>
@@ -45,7 +64,7 @@ function App() {
           </footer>
         </div>
         <div>
-          {/* Main Character */}
+          <img src={mainCharacter} alt="Main Valorant Character"/>
         </div>
       </section>
     </main>
