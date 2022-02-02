@@ -5,7 +5,6 @@ import "./fonts/Druk Wide Bold.ttf";
 import "./fonts/OpenSans-Bold.ttf";
 import "./fonts/OpenSans-Regular.ttf";
 
-import background from './img/background.png'
 import logo from './img/Logo.svg'
 import omen from './img/Omen.svg'
 import sage from './img/Sage.svg'
@@ -31,16 +30,16 @@ function App() {
       <section>
         <div>
           <h1>Valorant</h1>
-          <div>
-            <div>
+          <div className='container-heroes'>
+            <div className='hero'>
               <img src={omen} alt="Valorant Character - Omen"/>
               <span>Omen</span>
             </div>
-            <div>
+            <div className='hero'>
               <img src={sage} alt="Valorant Character - Sage"/>
               <span>Sage</span>
             </div>
-            <div>
+            <div className='hero'>
               <img src={sova} alt="Valorant Character - Sova"/>
               <span>Sova</span>
             </div>
