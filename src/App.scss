@@ -21,7 +21,6 @@ main {
     background-position: center;
     font-family: "OpenSans-Regular";
     color:var(--white);
-    padding: 2rem;
     display: grid;
     grid-template-rows: auto;
 
@@ -56,8 +55,8 @@ main {
             line-height: 7.6rem;
             text-transform: uppercase;
 
-            -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-            -webkit-text-stroke: 1px var(--white);
+            -webkit-text-fill-color: transparent; 
+            -webkit-text-stroke: .1rem var(--white);
         }
 
         .container-heroes {
@@ -101,7 +100,20 @@ main {
         footer {
             display: flex;
             position: absolute;
-            bottom: 0;        
+            bottom: 2.5rem;  
+            
+            div {
+                font-size: 2.5rem;
+                margin-right: 3rem;
+
+                &:last-child {
+                    margin-right: 0;                    
+                }
+
+                a {
+                    color: var(--white)
+                }
+            }
         }
     }
 }
