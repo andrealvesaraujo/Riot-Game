@@ -44,7 +44,7 @@ function App() {
         </div>
       </header>
       <section>
-        <div>
+        <div className='content'>
           <h1>Valorant</h1>
           <div className='container-heroes'>
             <div className='hero'>
@@ -78,7 +78,7 @@ function App() {
             </div>
           </footer>
         </div>
-        <div>
+        <div className="container-main-character">
           <img src={mainCharacter} alt="Main Valorant Character"/>
         </div>
       </section>

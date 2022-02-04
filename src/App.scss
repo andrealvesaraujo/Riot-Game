@@ -22,7 +22,8 @@ main {
     font-family: "OpenSans-Regular";
     color:var(--white);
     padding: 2rem;
-
+    display: grid;
+    grid-template-rows: auto;
 
     header {
         display: flex;
@@ -43,6 +44,11 @@ main {
     }
 
     section {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        
         h1 {
             font-family: "OpenSans-Bold";
             font-weight: bold;
@@ -61,6 +67,11 @@ main {
             .hero {
 
                 text-align: center;
+                margin-right: 2rem;
+
+                &:last-child {
+                    margin-right:0
+                }
 
                 span {
                     font-family: "Druk Wide Bold";
@@ -68,15 +79,29 @@ main {
                     font-size: 1.4rem;
                     line-height: 1.8rem;
                     letter-spacing: 0.1em;
-                    color: var(--red);
-                    margin-top: 10rem;
+                    color: var(--red);                   
+                }
+
+                img {
+                    margin-bottom: 1rem;
                 }
             }
+        }
+
+        .content {
+            justify-self: center;
+        }
+
+        .container-main-character {
+            align-self: flex-end;
+            justify-self: center;
         }
 
 
         footer {
             display: flex;
+            position: absolute;
+            bottom: 0;        
         }
     }
 }
