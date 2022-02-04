@@ -16,6 +16,17 @@ import {FiShare2, FiTwitter, FiFacebook, FiInstagram} from "react-icons/fi"
          
 
 function App() {
+
+  const handleShareInfo = () => {
+    navigator.share({
+      title: document.title,
+      text: "Meu Projeto em React do Site do Valorant - Andre Alves de Araújo",
+      url: window.location.href
+    })
+    .then(() => console.log('Successfully shared! <3'))
+    .catch((error) => console.log('Oh oh! Something went wrong:', error));
+  }
+
   return (
     <main>
       <header>
@@ -25,7 +36,12 @@ function App() {
           </a>
         </div>
         <h3>Riot Games</h3>
-        <div><FiShare2 className='share'/></div>
+        <div>
+          <FiShare2 
+            className='share'
+            onClick={()=>handleShareInfo()}
+          />
+        </div>
       </header>
       <section>
         <div>
