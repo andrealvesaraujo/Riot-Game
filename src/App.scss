@@ -21,105 +21,226 @@ main {
     background-position: center;
     font-family: "OpenSans-Regular";
     color:var(--white);
-    display: grid;
-    grid-template-rows: auto;
+    padding:1.5rem;
 
     header {
         display: flex;
         align-items: center;
         justify-content:space-around;
 
+        .logo {
+            width: 4rem;
+            height: 3rem;
+        }
+
         h3 {
             font-weight: bold;
-            font-size: 2.4rem;
+            font-size: 1.8rem;
             line-height: 3.3rem;
         }
 
         .share {
-            width: 2.4rem;
-            height: 2.4rem;
+            width: 2.25rem;
+            height: 2.25rem;
             cursor: pointer;
         }
     }
 
     section {
 
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        
-        h1 {
-            font-family: "OpenSans-Bold";
-            font-weight: bold;
-            font-size: 5.6rem;
-            line-height: 7.6rem;
-            text-transform: uppercase;
-
-            -webkit-text-fill-color: transparent; 
-            -webkit-text-stroke: .1rem var(--white);
-        }
-
-        .container-heroes {
-            display: flex;
-            margin-top: 5rem;
-
-            .hero {
-
-                text-align: center;
-                margin-right: 2rem;
-                width: 170px;
-                height: 170px;
-                border: 1px solid white;
-
-                &:last-child {
-                    margin-right:0
-                }
-
-                span {
-                    font-family: "Druk Wide Bold";
-                    font-weight: bold;
-                    font-size: 1.4rem;
-                    line-height: 1.8rem;
-                    letter-spacing: 0.1em;
-                    color: var(--red);     
-                    display: block;
-                    margin-top: 1rem;              
-                }
-
-                img {
-                    margin: 8px 0px 0px 8px;
-                }
-            }
-        }
-
         .content {
             justify-self: center;
+
+            
+            h1 {
+                font-family: "OpenSans-Bold";
+                font-weight: bold;
+                font-size: 5.6rem;
+                line-height: 7.6rem;
+                text-transform: uppercase;
+
+                -webkit-text-fill-color: transparent; 
+                -webkit-text-stroke: .1rem var(--white);
+            }
+
+            .container-heroes {
+                display: flex;
+                margin-top: 5rem;
+    
+                .hero {
+    
+                    text-align: center;
+                    margin-right: 2rem;
+                    width: 170px;
+                    height: 170px;
+                    border: 1px solid white;
+    
+                    &:last-child {
+                        margin-right:0
+                    }
+    
+                    span {
+                        font-family: "Druk Wide Bold";
+                        font-weight: bold;
+                        font-size: 1.4rem;
+                        line-height: 1.8rem;
+                        letter-spacing: 0.1em;
+                        color: var(--red);     
+                        display: block;
+                        margin-top: 1rem;              
+                    }
+    
+                    img {
+                        margin: 8px 0px 0px 8px;
+                    }
+                }
+            }
+
+            footer {
+                display: flex;
+                position: absolute;
+                bottom: 2.5rem;  
+                
+                div {
+                    font-size: 2.5rem;
+                    margin-right: 3rem;
+    
+                    &:last-child {
+                        margin-right: 0;                    
+                    }
+    
+                    a {
+                        color: var(--white)
+                    }
+                }
+            }
+
         }
 
         .container-main-character {
-            align-self: flex-end;
-            justify-self: center;
-        }
-
-
-        footer {
-            display: flex;
-            position: absolute;
-            bottom: 2.5rem;  
-            
-            div {
-                font-size: 2.5rem;
-                margin-right: 3rem;
-
-                &:last-child {
-                    margin-right: 0;                    
-                }
-
-                a {
-                    color: var(--white)
-                }
-            }
+            display: none;
         }
     }
 }
 
+@media (min-width: 768px) {
+    
+    main {
+        min-height:100vh;
+        background-image: url("./img/background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-family: "OpenSans-Regular";
+        color:var(--white);
+        display: grid;
+        grid-template-rows: auto;
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+
+            .logo {
+                width: 5.8rem;
+                height: 4rem;
+            }
+
+            h3 {
+                font-weight: bold;
+                font-size: 2.4rem;
+                line-height: 3.3rem;
+            }
+
+            .share {
+                width: 2.4rem;
+                height: 2.4rem;
+                cursor: pointer;
+            }
+        }
+
+        section {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+
+            .content {
+                justify-self: center;
+
+                h1 {
+                    font-family: "OpenSans-Bold";
+                    font-weight: bold;
+                    font-size: 5.6rem;
+                    line-height: 7.6rem;
+                    text-transform: uppercase;
+    
+                    -webkit-text-fill-color: transparent; 
+                    -webkit-text-stroke: .1rem var(--white);
+                }
+    
+                .container-heroes {
+                    display: flex;
+                    margin-top: 5rem;
+    
+                    .hero {
+    
+                        text-align: center;
+                        margin-right: 2rem;
+                        width: 170px;
+                        height: 170px;
+                        border: 1px solid white;
+    
+                        &:last-child {
+                            margin-right:0
+                        }
+    
+                        span {
+                            font-family: "Druk Wide Bold";
+                            font-weight: bold;
+                            font-size: 1.4rem;
+                            line-height: 1.8rem;
+                            letter-spacing: 0.1em;
+                            color: var(--red);     
+                            display: block;
+                            margin-top: 1rem;              
+                        }
+    
+                        img {
+                            margin: 8px 0px 0px 8px;
+                        }
+                    }
+                }
+
+                footer {
+                    display: flex;
+                    position: absolute;
+                    bottom: 2.5rem;  
+                    
+                    div {
+                        font-size: 2.5rem;
+                        margin-right: 3rem;
+    
+                        &:last-child {
+                            margin-right: 0;                    
+                        }
+    
+                        a {
+                            color: var(--white)
+                        }
+                    }
+                }
+            }
+
+            .container-main-character {
+                display: inherit;
+                align-self: flex-end;
+                justify-self: center;
+            }
+
+
+           
+        }
+    }
+
+}

@@ -32,7 +32,7 @@ function App() {
       <header>
         <div>
           <a href="https://playvalorant.com/pt-br/" target="_blank" rel="noreferrer">
-            <img src={logo} alt="Valorant Logo"/>
+            <img className="logo" src={logo} alt="Valorant Logo"/>
           </a>
         </div>
         <h3>Riot Games</h3>
