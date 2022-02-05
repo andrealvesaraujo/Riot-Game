@@ -49,15 +49,15 @@ main {
     section {
 
         .content {
-            justify-self: center;
+            text-align: center;
 
             
             h1 {
                 font-family: "OpenSans-Bold";
                 font-weight: bold;
-                font-size: 5.6rem;
-                line-height: 7.6rem;
+                font-size: 5rem;
                 text-transform: uppercase;
+                margin-top: 3rem;
 
                 -webkit-text-fill-color: transparent; 
                 -webkit-text-stroke: .1rem var(--white);
@@ -65,18 +65,20 @@ main {
 
             .container-heroes {
                 display: flex;
-                margin-top: 5rem;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 2rem;
     
                 .hero {
     
                     text-align: center;
-                    margin-right: 2rem;
-                    width: 170px;
-                    height: 170px;
+                    height: 160px;
                     border: 1px solid white;
+                    margin: 5rem 0 0 0;
+                    
     
-                    &:last-child {
-                        margin-right:0
+                    &:first-child {
+                        margin-top:0
                     }
     
                     span {
@@ -85,9 +87,9 @@ main {
                         font-size: 1.4rem;
                         line-height: 1.8rem;
                         letter-spacing: 0.1em;
-                        color: var(--red);     
+                        color: var(--red);
                         display: block;
-                        margin-top: 1rem;              
+                        margin-top: 0.5rem;         
                     }
     
                     img {
@@ -174,6 +176,7 @@ main {
                     font-size: 5.6rem;
                     line-height: 7.6rem;
                     text-transform: uppercase;
+                    margin-top: 0;
     
                     -webkit-text-fill-color: transparent; 
                     -webkit-text-stroke: .1rem var(--white);
@@ -182,11 +185,13 @@ main {
                 .container-heroes {
                     display: flex;
                     margin-top: 5rem;
+                    flex-direction: row;
+                    align-items: initial;
     
                     .hero {
     
                         text-align: center;
-                        margin-right: 2rem;
+                        margin: 0 2rem 0 0;
                         width: 170px;
                         height: 170px;
                         border: 1px solid white;
