@@ -130,17 +130,18 @@ To get a local copy up and running follow these simple example steps.
 
 - [x] Create React with Typescript and SASS Project
 - [x] Add reset, images, fonts, icons in projet
-- [ ] Finished Desktop
+- [x] Finished Desktop
   - [x]  Add HTML semantic 
   - [x]  Use images, fonts and icons
-  - [ ]  Create component of characters cards
+  - [x]  Create component of characters cards
   - [x]  Add flex/grid positioning
-- [ ] Finished Mobile
-  - [ ] Add media queries
-  - [ ] Update positions and images 
+- [x] Finished Mobile
+  - [x] Add media queries
+  - [x] Update positions and images 
 - [ ] Add Cypress Tests
 - [ ] Add click in card to change main image character
 - [x] Add feature of sharing page on click of share icon 
+- [ ] Optimize performance(Lighthouse)
 
 See the [open issues](https://github.com/andrealvesaraujo/Riot-Game/issues) for a full list of proposed features (and known issues).
 
