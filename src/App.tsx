@@ -11,8 +11,10 @@ import sage from './img/Sage.svg'
 import sova from './img/Sova.svg'
 import mainCharacter from './img/main-character.png'
 
-
 import {FiShare2, FiTwitter, FiFacebook, FiInstagram} from "react-icons/fi"
+
+
+import { Hero } from './components/Hero';
          
 
 function App() {
@@ -47,18 +49,9 @@ function App() {
         <div className='content'>
           <h1>Valorant</h1>
           <div className='container-heroes'>
-            <div className='hero'>
-              <img src={omen} alt="Valorant Character - Omen"/>
-              <span>Omen</span>
-            </div>
-            <div className='hero'>
-              <img src={sage} alt="Valorant Character - Sage"/>
-              <span>Sage</span>
-            </div>
-            <div className='hero'>
-              <img src={sova} alt="Valorant Character - Sova"/>
-              <span>Sova</span>
-            </div>
+            <Hero img={omen} alt={"Valorant Character - Omen"} name={"Omen"}></Hero>
+            <Hero img={sage} alt={"Valorant Character - Sage"} name={"Sage"}></Hero>
+            <Hero img={sova} alt={"Valorant Character - Sova"} name={"Sova"}></Hero>
           </div>
           <footer>
             <div>
