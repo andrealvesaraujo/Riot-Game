@@ -121,7 +121,7 @@ To get a local copy up and running follow these simple example steps.
 3. Test Cypress on CLI
 
     ```sh
-    npm cypress run
+    npx cypress run
     ```
     
 <p align="right">(<a href="#top">back to top</a>)</p>
