@@ -20,7 +20,7 @@
     <a href="https://github.com/andrealvesaraujo/Riot-Game"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://movie-streaming-andrealvesaraujo.vercel.app/">View Demo</a>
+    <a href="https://riot-game-andrealvesaraujo.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/andrealvesaraujo/Riot-Game/issues">Report Bug</a>
     ·
@@ -56,7 +56,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://movie-streaming-andrealvesaraujo.vercel.app/)
+[![Product Name Screen Shot][product-screenshot]](https://riot-game-andrealvesaraujo.vercel.app/)
 
 * Figma Prototype:
 
@@ -133,14 +133,14 @@ To get a local copy up and running follow these simple example steps.
 - [x] Finished Desktop
   - [x]  Add HTML semantic 
   - [x]  Use images, fonts and icons
-  - [x]  Create component of characters cards
   - [x]  Add flex/grid positioning
 - [x] Finished Mobile
   - [x] Add media queries
   - [x] Update positions and images 
-- [ ] Add Cypress Tests
-- [ ] Add click in card to change main image character
+- [x]  Create component of characters cards
 - [x] Add feature of sharing page on click of share icon 
+- [x] Add Cypress Tests
+- [ ] Add click in card to change main image character
 - [ ] Optimize performance(Lighthouse)
 
 See the [open issues](https://github.com/andrealvesaraujo/Riot-Game/issues) for a full list of proposed features (and known issues).
